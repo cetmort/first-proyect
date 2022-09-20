@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Player } from './models/player.model';
+
 
 @Component({
   selector: 'app-root',
@@ -125,6 +127,9 @@ export class AppComponent {
     console.log(multiplyNumbers(2, 2, 3));
 
   }
-
-
+  basicDestructuring(){
+    const CONCURRENT_SONG : Player = {
+      volume : 90,
+    }
+  }
 }
